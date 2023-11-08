@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f81c7840;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121e31;
+  color: #f2fdff;
+  position: fixed;
+  width: 100vw;
+  margin-top: 1em;
+  top: 0;
+  padding: 1em 3em;
+}
+
+.logo {
+  flex-grow: 0.5;
+  font-size: 2.5em;
+  white-space: nowrap;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.items-container {
+  flex-grow: 1;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+/* Links */
+header a {
+  color: #f2fdff;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: transform 0.2s, background-color 0.4s;
+}
+
+header a:hover,
+.items-container > li > a:hover {
+  background-color: #f81c7840;
+  transform: scale(1.2);
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.search-form :first-child {
+  padding-right: 1.2em;
+  border-radius: 0.4em;
+  height: 2.5em;
+}
+
+search-form :first-child:focus {
+  outline: 3px solid #1CA9F8;
+}
+
+/* Main Content */
+main {
+  margin: 35px 0;
+  margin-top: 8em;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Registro Form */
+.register-field {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #121e31;
+  width: 100%;
+  max-width: 70em;
+
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #f2fdff;
+  padding: 50px;
+  width: 100%;
+}
+
+.registro-form > * {
+  width: 100%;
+}
+
+.registro-form > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.registro-form input {
+  height: 3em;
+  border-radius: 0.4em;
+  transition: outline 0.4s;
+}
+
+.registro-form input:focus {
+  outline: 3px solid #1CA9F8;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #1CA9F8;
+  color: #f2fdff;
+  max-width: 450px;
+  border-radius: 5px;
+  padding: 0.4em 0;
+  font-size: 1.2em;
+  transition: box-shadow 0.2s, transform 0.2s, outline 0.2s;
+}
+
+.submit-button:hover {
+  box-shadow: 4px 4px black;
+  transform: translate(-1px, -1px);
+  outline: #1ca7f8 solid 1px;
+}
